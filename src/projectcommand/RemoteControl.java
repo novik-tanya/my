@@ -19,7 +19,7 @@ public class RemoteControl {
         onCommands=new CommandInt[7];
         offCommands=new CommandInt[7];
         
-        CommandInt noCommand=new NoCommandInt();
+        CommandInt noCommand=new NoCommand();
         for (int i=0;i<7;i++)
         {
             onCommands[i]=noCommand;

@@ -18,7 +18,8 @@ public class LightOffCommand implements CommandInt
         this.light=light;
     }
 
-    public void execute() {
+    public void execute() 
+    {
         //throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
         light.off();
     }
