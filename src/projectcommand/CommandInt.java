@@ -11,6 +11,7 @@ package projectcommand;
  */
 public interface CommandInt
 {
+
     public void execute();
 
 }
