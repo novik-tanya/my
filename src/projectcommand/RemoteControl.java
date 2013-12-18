@@ -28,10 +28,10 @@ public class RemoteControl {
 
             
     }
-    public void setCommand(int slot, CommandInt onCommandInt, CommandInt offCommand)
+    public void setCommand(int slot, CommandInt onCommand, CommandInt offCommand)
     {
-        onCommands[slot]=onCommandInt;
-        offCommands[slot]=offCommandInt;
+        onCommands[slot]=onCommand;
+        offCommands[slot]=offCommand;
     }
     public void onButtonWasPushed(int slot)
     {

@@ -12,7 +12,9 @@ package projectcommand;
 public class SimpleRemoteControl
 {
     CommandInt slot;
+    
     public SimpleRemoteControl() {}
+    
     public void SetCommand(CommandInt command)
     {
         slot=command;
