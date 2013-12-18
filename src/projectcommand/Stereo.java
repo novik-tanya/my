@@ -18,11 +18,24 @@ public class Stereo
     }
     public void setCD()
     {
-        System.out.println("CD is onn!");
+        System.out.println("CD is setCD!");
     }
     public void setVolume(int i)
     {
         System.out.println("Volume is " + i + "!");
     }
+    public void off()
+    {
+        System.out.println("Volume is off");
+    }
+    public void setDVD()
+    {
+        System.out.println("Volume is setDVD");
+    }
+    public void setRadio()
+    {
+        System.out.println("Volume is setRadio");
+    }
+    
     
 }
