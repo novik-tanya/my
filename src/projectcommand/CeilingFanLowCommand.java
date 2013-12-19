@@ -10,12 +10,12 @@ package projectcommand;
  *
  * @author Пользователь
  */
-public class CeilingFanOffCommand implements CommandInt
+public class CeilingFanLowCommand implements CommandInt
 {
      CeilingFan fan;
     int prevSpeed;
 
-    public CeilingFanOffCommand(CeilingFan fan) 
+    public CeilingFanLowCommand(CeilingFan fan) 
     {
         this.fan=fan;
     }
@@ -27,12 +27,14 @@ public class CeilingFanOffCommand implements CommandInt
     }
 
     public void undo() {
-      //  throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-        if(prevSpeed==CeilingFan.OFF){
+      if(prevSpeed==CeilingFan.LOW){
+            fan.low();}
+        else if(prevSpeed==CeilingFan.OFF){
             fan.off();
         }
              
     
     }
+    
     
 }

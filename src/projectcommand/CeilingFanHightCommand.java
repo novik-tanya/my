@@ -6,28 +6,40 @@
 
 package projectcommand;
 
+
 /**
  *
  * @author Пользователь
  */
-public class CeilingFanOnCommand implements CommandInt
+public class CeilingFanHightCommand implements CommandInt
 {
     CeilingFan fan;
+    int prevSpeed;
 
-    public CeilingFanOnCommand(CeilingFan fan) 
+    public CeilingFanHightCommand(CeilingFan fan) 
     {
         this.fan=fan;
     }
 
     public void execute() {
        // throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        prevSpeed=fan.getSpeed();
         fan.high();
-        fan.setSpeed();
     }
 
     public void undo() {
       //  throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-        fan.off();
+        if(prevSpeed==CeilingFan.HIGH){
+            fan.high();}
+        else if(prevSpeed==CeilingFan.MEDIUM){
+            fan.medium();  }
+        else if(prevSpeed==CeilingFan.LOW){
+            fan.low();}
+        else if(prevSpeed==CeilingFan.OFF){
+            fan.off();
+        }
+             
+    
     }
     
 }
