@@ -13,5 +13,6 @@ public interface CommandInt
 {
 
     public void execute();
+    public void undo();
 
 }

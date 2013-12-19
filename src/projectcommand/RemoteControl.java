@@ -35,7 +35,10 @@ public class RemoteControl {
     }
     public void onButtonWasPushed(int slot)
     {
+        if(onCommands[slot]!=null)
+        {
         onCommands[slot].execute();
+        }
     }
      public void offButtonWasPushed(int slot)
     {

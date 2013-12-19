@@ -10,11 +10,11 @@ package projectcommand;
  *
  * @author Пользователь
  */
-public class CeilingFanlOnCommand implements CommandInt
+public class CeilingFanOnCommand implements CommandInt
 {
     CeilingFan fan;
 
-    public CeilingFanlOnCommand(CeilingFan fan) 
+    public CeilingFanOnCommand(CeilingFan fan) 
     {
         this.fan=fan;
     }
