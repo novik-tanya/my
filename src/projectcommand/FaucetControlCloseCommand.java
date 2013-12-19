@@ -24,10 +24,5 @@ public class FaucetControlCloseCommand implements CommandInt
         //throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
         faucet.closeValue();
     }
-
-    public void undo() {
-        //throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-        faucet.openValue();
-    }
     
 }

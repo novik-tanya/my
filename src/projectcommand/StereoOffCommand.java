@@ -24,10 +24,5 @@ public class StereoOffCommand implements CommandInt
        // throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
         stereo.off();
     }
-
-    public void undo() {
-       // throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-        stereo.on();
-    }
     
 }

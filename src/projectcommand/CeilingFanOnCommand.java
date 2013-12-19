@@ -24,10 +24,5 @@ public class CeilingFanOnCommand implements CommandInt
         fan.high();
         fan.setSpeed();
     }
-
-    public void undo() {
-      //  throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-        fan.off();
-    }
     
 }

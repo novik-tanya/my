@@ -13,7 +13,6 @@ package projectcommand;
 public class RemoteControl {
     CommandInt[] onCommands;
     CommandInt[] offCommands;
-    CommandInt undoCommand;
     
     public RemoteControl()
     {
@@ -26,9 +25,9 @@ public class RemoteControl {
             onCommands[i]=noCommand;
             offCommands[i]=noCommand;
         }
-        undoCommand=noCommand;
+
+            
     }
-    
     public void setCommand(int slot, CommandInt onCommand, CommandInt offCommand)
     {
         onCommands[slot]=onCommand;
@@ -36,21 +35,15 @@ public class RemoteControl {
     }
     public void onButtonWasPushed(int slot)
     {
-        //if(onCommands[slot]!=null)
+        if(onCommands[slot]!=null)
         {
         onCommands[slot].execute();
-        undoCommand=offCommands[slot];
         }
     }
      public void offButtonWasPushed(int slot)
     {
         offCommands[slot].execute();
-        undoCommand=offCommands[slot];
     }
-     public void undoButtonWasPushed(int slot)
-     {
-         undoCommand.undo();
-     }
      public String toString()
      {
          StringBuffer stringBuff=new StringBuffer();

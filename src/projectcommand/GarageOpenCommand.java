@@ -22,8 +22,4 @@ public class GarageOpenCommand  implements CommandInt
     
     }
 
-    public void undo() {
-        door.down();
-    }
-
 }
