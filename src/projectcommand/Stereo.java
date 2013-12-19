@@ -12,6 +12,12 @@ package projectcommand;
  */
 public class Stereo 
 {
+
+    public Stereo(String i)
+    {
+        System.out.println(i);   
+    }
+    
      public void on()
     {
         System.out.println("Stereo is on!");

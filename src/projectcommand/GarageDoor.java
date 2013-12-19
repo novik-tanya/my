@@ -11,6 +11,15 @@ package projectcommand;
  */
 public class GarageDoor
 {
+
+    public GarageDoor() {
+    }
+    
+    public GarageDoor(String i)
+    {
+        System.out.println(i);
+    }
+    
     public void up()
     {
         System.out.println("Door is up!");

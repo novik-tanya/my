@@ -12,6 +12,12 @@ package projectcommand;
  */
 public class CeilingFan 
 {
+
+    public CeilingFan(String i) 
+    {
+        System.out.println(i);
+    }
+    
     public void high()
     {
         System.out.println("CeilingFan is high!");

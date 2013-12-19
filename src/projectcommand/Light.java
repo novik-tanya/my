@@ -11,6 +11,16 @@ package projectcommand;
  */
 public class Light
 {
+
+    public Light() {
+    }
+
+    
+    public Light(String i) 
+    {
+        System.out.println(i);   
+    }
+    
     public void on()
     {
         System.out.println("Light is on!");
