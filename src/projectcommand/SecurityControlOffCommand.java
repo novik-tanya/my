@@ -24,5 +24,10 @@ public class SecurityControlOffCommand implements CommandInt
         //throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
         security.disarm();
     }
+
+    public void undo() {
+       // throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        security.arm();
+    }
     
 }
