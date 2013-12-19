@@ -23,12 +23,18 @@ public class CeilingFanOffCommand implements CommandInt
     public void execute() {
        // throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
         prevSpeed=fan.getSpeed();
-        fan.high();
+        fan.off();
     }
 
     public void undo() {
       //  throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-        if(prevSpeed==CeilingFan.OFF){
+        if(prevSpeed==CeilingFan.HIGH){
+            fan.high();}
+        else if(prevSpeed==CeilingFan.MEDIUM){
+            fan.medium();  }
+        else if(prevSpeed==CeilingFan.LOW){
+            fan.low();}
+        else if(prevSpeed==CeilingFan.OFF){
             fan.off();
         }
              
