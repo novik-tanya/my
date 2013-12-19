@@ -12,6 +12,12 @@ package projectcommand;
  */
 public class TV 
 {
+
+    public TV(String i)
+    {
+        System.out.println(i);
+    }
+    
     public void on()
     {
         System.out.println("Tv is on!");

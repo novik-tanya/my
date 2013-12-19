@@ -10,26 +10,24 @@ package projectcommand;
  *
  * @author Пользователь
  */
-public class HottubOffCommand implements CommandInt
+public class StereoOnCommand implements CommandInt
 {
-    Hottub hottub;
-
-    public HottubOffCommand( Hottub hottub) 
+ Stereo stereo;
+    
+    public StereoOnCommand(Stereo stereo)
     {
-        this.hottub=hottub;
+        this.stereo=stereo;
     }
-    
-    
 
     public void execute() {
-      //  throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-        hottub.justOff();
+       // throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        stereo.on();
+       
     }
 
     public void undo() {
       //  throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-        hottub.justOn();
+        stereo.off();
     }
-    
     
 }
