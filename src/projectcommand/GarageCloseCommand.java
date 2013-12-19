@@ -22,5 +22,10 @@ public class GarageCloseCommand implements CommandInt
       //  throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
         door.down();
     }
+
+    public void undo() {
+        //throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        door.up();
+    }
     
 }

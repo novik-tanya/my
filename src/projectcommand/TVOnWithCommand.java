@@ -26,5 +26,10 @@ public class TVOnWithCommand implements CommandInt
         tv.setInputChannel();
         tv.setVolume();
     }
+
+    public void undo() {
+       // throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        tv.off();
+    }
     
 }

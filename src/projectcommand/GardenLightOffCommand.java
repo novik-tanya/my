@@ -26,5 +26,10 @@ public class GardenLightOffCommand implements CommandInt
         garden.setDawnTime();
         garden.manualOff();
     }
+
+    public void undo() {
+        //throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        garden.manualOn();
+    }
     
 }

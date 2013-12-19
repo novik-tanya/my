@@ -25,5 +25,10 @@ public class StereoOnWithCommand implements CommandInt
         stereo.setCD();
         stereo.setVolume(11);
     }
+
+    public void undo() {
+      //  throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        stereo.off();
+    }
     
 }
