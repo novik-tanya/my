@@ -11,7 +11,8 @@ package projectcommand;
  * @author Пользователь
  */
 public class MacroCommand implements CommandInt
-{CommandInt[] commands;
+{
+    CommandInt[] commands;
 
     public MacroCommand(CommandInt[] commands)
     {
@@ -28,6 +29,10 @@ public class MacroCommand implements CommandInt
 
     public void undo() {
        // throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        for (int i=0; i<commands.length; i++)
+        {
+            commands[i].undo();
+        }
     }
     
 }
